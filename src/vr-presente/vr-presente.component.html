@@ -1,0 +1,15 @@
+Valor inicial:<input
+  type="number"
+  [(ngModel)]="vp"
+  placeholder="Valor inicial"
+/>
+<br />
+Taxa de juros: <input type="number" [(ngModel)]="j" />
+<br />
+Prazo em meses: <input type="number" [(ngModel)]="p" />
+<br />
+
+<div>
+  <input type="button" value="Calcular" (click)="calcularValorFinal()" />
+</div>
+<div>Valor atualizado: {{ vf }}</div>
