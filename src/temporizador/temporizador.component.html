@@ -1,5 +1,16 @@
-
-<input type='button' (click)='iniciar()' value='Iniciar'> 
-<input type='button' (click)='continuar()' value='Continuar'> 
-<input type='button' (click)='parar()' value='Parar'> 
-<div>{{exibir()}}</div>
+<input
+  type="button"
+  (click)="iniciar()"
+  class="btn btn-primary"
+  value="Iniciar"
+/>
+&nbsp;
+<input
+  type="button"
+  (click)="continuar()"
+  class="btn btn-success"
+  value="Continuar"
+/>
+&nbsp;
+<input type="button" (click)="parar()" class="btn btn-danger" value="Parar" />
+<div>{{ exibir() }}</div>
