@@ -1,15 +1,23 @@
-Valor inicial:<input
+Valor inicial:
+<input
   type="number"
   [(ngModel)]="vp"
   placeholder="Valor inicial"
+  class="ms-4"
 />
 <br />
-Taxa de juros: <input type="number" [(ngModel)]="j" />
+Taxa de juros:
+<input type="number" [(ngModel)]="j" class="ms-4" />
 <br />
 Prazo em meses: <input type="number" [(ngModel)]="p" />
 <br />
 
 <div>
-  <input type="button" value="Calcular" (click)="calcularValorFinal()" />
+  <input
+    type="button"
+    value="Calcular"
+    (click)="calcularValorFinal()"
+    class="btn btn-primary"
+  />
 </div>
 <div>Valor atualizado: {{ vf }}</div>
